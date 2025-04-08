@@ -5,11 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
-<meta
-  name="viewport"
-  content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"
-/>;
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
