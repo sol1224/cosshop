@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.css";
@@ -10,6 +10,22 @@ import SearchBar from "./SearchBar";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const navbarRef = useRef();
+
+  // 바깥 클릭을 감지하여 메뉴 상태 업데이트
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    // 바깥 클릭 이벤트 리스너 추가
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navbarRef]);
 
   const toggleMenu = () => {
     if (!isSearchOpen) {
@@ -24,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div ref={navbarRef}>
       <div className="nav-title">
         <div className="nav-title-font">
           2025 봄 여름 런웨이 | 컬렉션 보러가기

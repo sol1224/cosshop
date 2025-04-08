@@ -396,4 +396,7 @@ input:valid ~ span {
   .search-show-menu {
     width: 100% !important;
   }
+  .sidebar-sec {
+    font-size: 11px;
+  }
 }
