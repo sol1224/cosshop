@@ -242,7 +242,6 @@ input {
   position: relative;
   background: none;
   z-index: 10;
-  -webkit-text-size-adjust: 100%;
 }
 
 input::placeholder {
