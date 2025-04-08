@@ -1,38 +1,399 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot");
+  src: url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#SuisseIntl-Regular")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SuisseIntl-Medium";
+  src: url("https://db.onlinewebfonts.com/t/c446362802681bacaacbad0f39bfc1a5.eot");
+  src: url("https://db.onlinewebfonts.com/t/c446362802681bacaacbad0f39bfc1a5.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c446362802681bacaacbad0f39bfc1a5.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c446362802681bacaacbad0f39bfc1a5.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/c446362802681bacaacbad0f39bfc1a5.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c446362802681bacaacbad0f39bfc1a5.svg#SuisseIntl-Medium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "SuisseIntl-Bold";
+  src: url("https://db.onlinewebfonts.com/t/d1a580023d40c546276decde1c711e60.eot");
+  src: url("https://db.onlinewebfonts.com/t/d1a580023d40c546276decde1c711e60.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d1a580023d40c546276decde1c711e60.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d1a580023d40c546276decde1c711e60.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/d1a580023d40c546276decde1c711e60.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d1a580023d40c546276decde1c711e60.svg#SuisseIntl-Bold")
+      format("svg");
+}
+
+* {
+  font-family: "SuisseIntl-Regular", "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.nav-title {
+  background-color: black;
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav-body {
+  min-width: 330px;
+}
+
+.nav-title-font {
+  color: #fff;
+  width: 100%;
+  padding: 0px 0;
+  font-size: 11.6px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-img {
+  width: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-categori-area {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+}
+
+.icon-img {
+  width: 15px;
+}
+
+.menubar {
+  line-height: 2;
+}
+
+.menu-categori {
+  padding: 0 20px;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+}
+
+.row {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 0 !important;
+}
+
+div.col {
+  padding: 10px;
+}
+div.col-4 {
+  padding: 10px;
+  text-align: right;
+}
+div.col-2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.col-img {
+  margin: 5px;
+}
+
+.menu-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+  cursor: pointer;
+}
+
+.col {
+  align-content: center;
+}
+
+.col-2 {
+  align-content: center;
+}
+
+.col-4 {
+  align-content: center;
+}
+
+.col-6 {
+  padding: 0 !important;
+  width: 100%;
+}
+.selector {
+  width: 100%;
+}
+
+div.row {
+  padding: 0 !important;
+}
+
+.icon-list {
+  text-align: right;
+}
+
+.mainImg {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.show-menu {
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+}
+
+.search-show-menu {
+  background-color: white;
+  width: 30% !important;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+}
+
+.hide-menu {
+  width: 376px;
+  height: 500px;
+  position: absolute;
+  left: -376px;
+}
+
+.dis-flex {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar-sec {
+  width: 30%;
+  line-height: 2;
+  font-size: 0.84rem;
+  font-family: SuisseIntl-bold;
+  letter-spacing: 1.2px;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  font-size: 15px;
+  color: #222222;
+  width: 300px;
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  background: none;
+  z-index: 5;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+}
+input:focus {
+  outline: none;
+}
+
+span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0%; /* right로만 바꿔주면 오 - 왼 */
+  background-color: #666;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+label {
+  position: absolute;
+  color: #aaa;
+  left: 10px;
+  font-size: 20px;
+  bottom: 8px;
+  transition: all 0.2s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 16px;
+  bottom: 40px;
+  color: #666;
+  font-weight: bold;
+}
+
+input:focus ~ span,
+input:valid ~ span {
+  width: 100%;
+}
+
+.box {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.89rem;
+}
+
+.box-position {
+  position: relative;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.reco {
+  margin-top: 34px;
+  margin-left: 14px;
+}
+
+.dis-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.reco-title {
+  margin-bottom: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.recommendedItem {
+  line-height: 1.8;
+}
+
+.bottom-border {
+  border-bottom: thin solid rgb(230, 230, 230);
+}
+
+/*===============================*/
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 671px) {
+  .container-sm,
+  .container {
+    max-width: 100% !important;
+  }
+  .main-display-two {
+    display: none;
+  }
+  .main-display-one {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 100% !important;
+  }
+  .cate {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 100% !important;
+  }
+  .cate {
+    display: none;
+  }
+  .button-mo {
+    display: none;
+  }
+  .search-show-menu {
+    width: 100% !important;
   }
 }

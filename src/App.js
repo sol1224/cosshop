@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Main from "./page/Main";
+import Login from "./page/Login";
+import ProductAll from "./page/ProductAll";
+import ProductDetail from "./page/ProductDetail";
+import Navvar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import { useState } from "react";
+// 2주차_1. 미션
+// 상단 메뉴 디자인이 끝나있어야 한다.
+// 특히 서치박스 디자인이 되어있어야 한다.
 
+// 1. Router
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navvar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/product" element={<ProductAll />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+      </Routes>
     </div>
   );
 }
