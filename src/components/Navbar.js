@@ -6,11 +6,30 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Sidebar from "./Sidebar";
 import SearchBar from "./SearchBar";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ user, setSex }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const navbarRef = useRef();
+  const navigate = useNavigate();
+
+  const loginPage = () => {
+    if (user) {
+      navigate("/");
+    } else {
+      navigate("/login");
+    }
+  };
+
+  const productPageMove = sex => {
+    setSex(sex);
+    navigate(`/product/${sex}`);
+  };
+
+  const moveHome = () => {
+    navigate("/product");
+  };
 
   // 바깥 클릭을 감지하여 메뉴 상태 업데이트
   useEffect(() => {
@@ -50,7 +69,10 @@ const Navbar = () => {
       {/* ================= */}
       <Row className="nav-body">
         <Col>
-          <button className="menu-button" onClick={() => toggleMenu()}>
+          <button
+            className="menu-button menu-left-pd"
+            onClick={() => toggleMenu()}
+          >
             <img
               alt="iconmenubar"
               className="icon-img menubar col-img"
@@ -59,36 +81,46 @@ const Navbar = () => {
           </button>
         </Col>
         <Col className="button-mo">
-          <a className="cate" href="#">
+          <button
+            className="cate"
+            href="/product"
+            onClick={() => productPageMove("women")}
+          >
             여성
-          </a>
+          </button>
         </Col>
         <Col>
-          <a className="cate" href="#">
+          <button
+            className="cate"
+            href="/product"
+            onClick={() => productPageMove("man")}
+          >
             남성
-          </a>
+          </button>
         </Col>
         <Col></Col>
         <Col></Col>
         <Col xs={2}>
-          <a href="#">
-            <img
-              alt="iconlogo"
-              className="logo-img col-img"
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6e/COS_Logo.png"
-            ></img>
-          </a>
+          <img
+            alt="iconlogo"
+            className="logo-img col-img"
+            onClick={moveHome}
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/COS_Logo.png"
+          ></img>
         </Col>
         <Col></Col>
         <Col xs={4} className="icon-list">
-          <button className="menu-button" onClick={() => toggleSerch()}>
+          <button
+            className="menu-button button-mo-pd"
+            onClick={() => toggleSerch()}
+          >
             <img
               alt="iconsearchbar"
               className="icon-img col-img"
               src="/icon/search.png"
             ></img>
           </button>
-          <button className="menu-button button-mo">
+          <button className="menu-button button-mo" onClick={loginPage}>
             <img
               alt="iconmenubar"
               className="icon-img menubar col-img"
@@ -102,7 +134,7 @@ const Navbar = () => {
               src="/icon/heart2.png"
             ></img>
           </button>
-          <button className="menu-button button-mo">
+          <button className="menu-button button-mo menu-right-pd">
             <img
               alt="iconbag"
               className="icon-img col-img"
@@ -113,7 +145,11 @@ const Navbar = () => {
       </Row>
 
       <Sidebar isOpen={isOpen} />
-      <SearchBar isSearchOpen={isSearchOpen} />
+      <SearchBar
+        setSex={setSex}
+        isSearchOpen={isSearchOpen}
+        setIsSearchOpen={setIsSearchOpen}
+      />
     </div>
   );
 };
