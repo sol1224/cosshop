@@ -441,7 +441,7 @@ input:valid ~ span {
 .login-input {
   background-color: #d8d8d8;
   border: none;
-  width: 600px;
+  width: 80%;
 }
 
 .login-button {
@@ -452,13 +452,13 @@ input:valid ~ span {
   font-family: SuisseIntl-Medium;
   height: 40px;
   font-size: 0.86rem;
-  width: 600px;
+  width: 80%;
 }
 
 .login-page {
   font-family: SuisseIntl-Medium;
   font-size: 0.85rem;
-  width: 100%;
+  width: 80%;
 }
 
 .login-page-title {
@@ -470,7 +470,7 @@ input:valid ~ span {
 }
 
 .login-label {
-  width: 600px;
+  width: 80%;
   padding-bottom: 6px;
   font-size: 0.85rem;
 }
