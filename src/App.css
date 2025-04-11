@@ -907,6 +907,6 @@ input:valid ~ span {
   }
 
   .login-input {
-    width: 300px;
+    width: 150px;
   }
 }
