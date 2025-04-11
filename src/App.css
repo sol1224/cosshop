@@ -902,4 +902,7 @@ input:valid ~ span {
     margin-top: 20px;
     font-size: 0.74rem;
   }
+  .mainImg {
+    height: 700px !important;
+  }
 }

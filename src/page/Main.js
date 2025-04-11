@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const Main = () => {
   return (
-    <Row style={{ height: "100vh", margin: 0 }}>
+    <Row>
       <Col className="mainImg" lg={6} style={{ height: "100%" }}>
         <img
           alt="mainImg1"
