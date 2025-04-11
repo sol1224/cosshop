@@ -909,4 +909,14 @@ input:valid ~ span {
   .login-input {
     width: 150px;
   }
+
+  .login-button {
+    width: 150px;
+  }
+  .find-me {
+    width: 150px;
+  }
+  .login-page-etc {
+    width: 150px;
+  }
 }
