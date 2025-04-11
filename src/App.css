@@ -906,19 +906,7 @@ input:valid ~ span {
     height: 700px !important;
   }
 
-  .login-button {
-    width: 400px;
-  }
-  .login-label {
-    width: 400px;
-  }
   .login-input {
-    width: 400px;
-  }
-  .find-me {
-    width: 400px;
-  }
-  .login-page-etc {
-    width: 400px;
+    width: 300px;
   }
 }
