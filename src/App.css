@@ -871,9 +871,7 @@ input:valid ~ span {
   }
 
   .footer-img {
-    padding: 0;
-    width: 100%;
-    margin: 0 auto;
+    padding: 40%;
   }
 
   .home-bottom-img {
