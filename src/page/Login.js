@@ -10,7 +10,7 @@ const Login = ({ setAuthenticate, user, setUser }) => {
   const [password, setPassword] = useState("");
 
   if (user) {
-    navigate("/");
+    navigate("/product");
   }
 
   const loginUser = event => {
