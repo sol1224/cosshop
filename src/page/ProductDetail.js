@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../utils/api";
 
-const ProductDetail = () => {
+const ProductDetail = ({ user }) => {
   const [item, setItem] = useState("");
+  const navigate = useNavigate();
+
   let { id } = useParams();
 
   const getProductList = async () => {
@@ -14,6 +16,10 @@ const ProductDetail = () => {
   useEffect(() => {
     getProductList();
   }, []);
+
+  if (!user) {
+    navigate("/login");
+  }
 
   return (
     <div className="product-detail">

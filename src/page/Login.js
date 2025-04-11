@@ -13,6 +13,10 @@ const Login = ({ setAuthenticate, user, setUser }) => {
     navigate("/product");
   }
 
+  const gotoLogin = () => {
+    navigate("/login");
+  };
+
   const loginUser = event => {
     event.preventDefault();
     setAuthenticate(true);
@@ -29,12 +33,14 @@ const Login = ({ setAuthenticate, user, setUser }) => {
     <Container>
       <Form onSubmit={event => loginUser(event)}>
         <div className="login-page-title">
-          <div className="login-page-title-sub">
-            <a href="/login">로그인</a>
+          {/* <div className="login-page-title-sub">
+            <button className="cate" onClick={() => gotoLogin()}>
+              로그인
+            </button>
           </div>
           <div className="login-page-title-sub">
-            <a href="/join">회원가입</a>
-          </div>
+            <a href="/#">회원가입</a>
+          </div> */}
         </div>
         <section className="login-form">
           <div className="login-label top-pd" type="userId">
