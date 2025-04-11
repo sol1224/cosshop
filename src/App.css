@@ -907,16 +907,16 @@ input:valid ~ span {
   }
 
   .login-input {
-    width: 250px;
+    width: 70%;
   }
 
   .login-button {
-    width: 250px !important;
+    width: 70% !important;
   }
   .find-me {
-    width: 250px !important;
+    width: 70% !important;
   }
   .login-page-etc {
-    width: 250px !important;
+    width: 70% !important;
   }
 }
