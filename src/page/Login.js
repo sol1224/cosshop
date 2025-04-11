@@ -21,7 +21,7 @@ const Login = ({ setAuthenticate, user, setUser }) => {
     event.preventDefault();
     setAuthenticate(true);
     loginWithUserId({ userId, password });
-    navigate("/");
+    navigate("/product");
   };
 
   const loginWithUserId = async ({ userId, password }) => {
