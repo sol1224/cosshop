@@ -3,8 +3,12 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <div style={{ width: "100%" }}>
-        <img alt="iconlogo" src="/icon/footer.png"></img>
+      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <img
+          alt="iconlogo"
+          src="/icon/footer.png"
+          className="logo-img-footer"
+        />
       </div>
       <div className="footer-text1">
         <div className="mo-row">
