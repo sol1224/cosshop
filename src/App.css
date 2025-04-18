@@ -188,10 +188,10 @@ a {
   align-content: center;
 }
 
-/* .col-6 {
+.col-6 {
   padding: 0 !important;
   width: 100%;
-} */
+}
 .selector {
   width: 100%;
 }
@@ -927,6 +927,8 @@ input:valid ~ span {
     width: 300px;
   }
   .login-button {
+    justify-content: center;
+    justify-items: center;
     width: 300px !important;
   }
   .find-me {
