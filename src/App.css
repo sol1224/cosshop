@@ -147,6 +147,9 @@ body {
   padding-right: 0 !important;
 }
 
+div.col {
+  padding: 10px;
+}
 div.col-4 {
   padding: 10px;
   text-align: right;
@@ -185,10 +188,10 @@ a {
   align-content: center;
 }
 
-.col-6 {
+/* .col-6 {
   padding: 0 !important;
   width: 100%;
-}
+} */
 .selector {
   width: 100%;
 }
