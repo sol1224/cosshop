@@ -623,7 +623,7 @@ input:valid ~ span {
 }
 
 .home-bottom-img {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   height: 242px;
   align-content: center;
@@ -876,9 +876,12 @@ input:valid ~ span {
   }
 
   .home-bottom-img {
-    border: none;
-    margin: 0 auto !important;
     width: 100%;
+    margin: 0 auto;
+    height: 242px;
+    align-content: center;
+    justify-items: center;
+    border-bottom: 1px solid rgb(54, 54, 54);
   }
 
   .footer-text1 {
