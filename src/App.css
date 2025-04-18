@@ -484,7 +484,7 @@ input:valid ~ span {
 }
 
 .login-form {
-  padding: 20px;
+  padding: 30px;
   justify-items: center;
 }
 
@@ -880,6 +880,8 @@ input:valid ~ span {
 
   .home-bottom-img {
     border: none;
+    margin: 0 auto !important;
+    width: 100%;
   }
 
   .footer-text1 {
@@ -939,6 +941,7 @@ input:valid ~ span {
     width: 100% !important;
   }
   .login-form {
+    padding: 30px;
     justify-items: center !important;
   }
   .nav-menu {
