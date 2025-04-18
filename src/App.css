@@ -952,4 +952,9 @@ input:valid ~ span {
   .logo-img {
     margin: 0 auto; /* 중앙 정렬 유도 */
   }
+
+  .nav-body {
+    width: 100%;
+    --bs-gutter-x: 0 !important;
+  }
 }
