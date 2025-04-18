@@ -954,16 +954,7 @@ input:valid ~ span {
     margin: 0 auto; /* 중앙 정렬 유도 */
   }
 
-  .nav-body {
-    width: 100%;
-    --bs-gutter-x: 0 !important;
-  }
-
-  .row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
+  div.col {
+    padding: 0px;
   }
 }

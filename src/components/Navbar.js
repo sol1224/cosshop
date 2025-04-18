@@ -67,10 +67,10 @@ const Navbar = ({ user, setSex }) => {
       </div>
 
       {/* ================= */}
-      <Row>
+      <Row className="nav-body">
         <Col>
           <button
-            // className="menu-button menu-left-pd"
+            className="menu-button menu-left-pd"
             onClick={() => toggleMenu()}
           >
             <img
