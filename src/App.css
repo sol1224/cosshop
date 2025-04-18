@@ -874,6 +874,10 @@ input:valid ~ span {
     flex-direction: column;
   }
 
+  .footer-img {
+    margin: 0 auto;
+  }
+
   .home-bottom-img {
     border: none;
     margin: 0 auto !important;
