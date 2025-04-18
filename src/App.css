@@ -108,6 +108,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+.icon-pd {
+  margin-left: 10px;
+}
 
 .icon-img {
   width: 15px;
@@ -774,7 +777,7 @@ input:valid ~ span {
     font-size: 11px;
   }
   .button-mo-pd {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .product-detail-sub-img {
     display: none;
@@ -952,5 +955,11 @@ input:valid ~ span {
 
   .col-pd {
     padding: 0;
+  }
+  .login-form {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
   }
 }

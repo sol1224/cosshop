@@ -116,28 +116,28 @@ const Navbar = ({ user, setSex }) => {
           >
             <img
               alt="iconsearchbar"
-              className="icon-img col-img"
+              className="icon-img col-img icon-pd"
               src="/icon/search.png"
             ></img>
           </button>
           <button className="menu-button button-mo" onClick={loginPage}>
             <img
               alt="iconmenubar"
-              className="icon-img menubar col-img"
+              className="icon-img menubar col-img icon-pd"
               src="/icon/user.png"
             ></img>
           </button>
           <button className="menu-button button-mo">
             <img
               alt="iconheart"
-              className="icon-img col-img"
+              className="icon-img col-img icon-pd"
               src="/icon/heart2.png"
             ></img>
           </button>
           <button className="menu-button button-mo menu-right-pd">
             <img
               alt="iconbag"
-              className="icon-img col-img"
+              className="icon-img col-img icon-pd"
               src="/icon/bag2.png"
             ></img>
           </button>
