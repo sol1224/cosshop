@@ -140,7 +140,7 @@ body {
 }
 
 .row {
-  --bs-gutter-x: 0 !important;
+  --bs-gutter-x: 1.5 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-left: 0 !important;
