@@ -147,7 +147,7 @@ body {
   padding-right: 0 !important;
 }
 
-/* div.col {
+div.col {
   padding: 10px;
 }
 div.col-4 {
@@ -157,7 +157,7 @@ div.col-4 {
 div.col-2 {
   padding: 10px;
   text-align: center;
-} */
+}
 
 .col-img {
   /* margin: 5px 12px; */
@@ -339,7 +339,7 @@ input:valid ~ span {
 .dis-col {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 40px;
 }
 
