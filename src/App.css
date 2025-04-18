@@ -147,9 +147,6 @@ body {
   padding-right: 0 !important;
 }
 
-div.col {
-  padding: 10px;
-}
 div.col-4 {
   padding: 10px;
   text-align: right;
@@ -339,7 +336,7 @@ input:valid ~ span {
 .dis-col {
   display: flex;
   flex-direction: column;
-  /* margin-left: 20px; */
+  margin-left: 20px;
   margin-bottom: 40px;
 }
 
