@@ -927,8 +927,6 @@ input:valid ~ span {
     width: 300px;
   }
   .login-button {
-    justify-content: center;
-    justify-items: center;
     width: 300px !important;
   }
   .find-me {
@@ -950,5 +948,49 @@ input:valid ~ span {
 
   .logo-img {
     margin: 0 auto; /* 중앙 정렬 유도 */
+  }
+}
+@media (max-width: 576px) {
+  .nav-menu {
+    padding: 0 10px;
+    justify-content: center; /* ← 메뉴 항목 중앙 정렬 */
+  }
+
+  .logo-img {
+    margin: 0 auto;
+    display: block; /* ← 로고를 중앙에 */
+  }
+
+  .menu-categori-area {
+    display: none; /* ← 좌측 카테고리 메뉴 숨김 */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img-footer {
+    width: 160px; /* ← 더 작게 조정 */
+    display: block;
+    margin: 0 auto; /* ← 가운데 정렬 */
+  }
+}
+
+@media (max-width: 576px) {
+  .login-input {
+    width: 100% !important;
+  }
+
+  .login-button,
+  .find-me,
+  .login-page-etc {
+    width: 100% !important;
+  }
+
+  .bottom-pd,
+  .login-label {
+    width: 100% !important;
+  }
+
+  .login-form {
+    padding: 16px; /* ← 모바일 여백 추가 */
   }
 }
