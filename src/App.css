@@ -45,13 +45,19 @@
       format("svg");
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 * {
   font-family: "SuisseIntl-Medium", "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
 }
 body {
   margin: 0;
-  overflow-x: hidden !important;
 }
 
 .main {
@@ -61,9 +67,8 @@ body {
 }
 
 .container {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .nav-title {
@@ -135,10 +140,11 @@ body {
 }
 
 .row {
-  padding-left: 0px !important;
-  padding-right: 16px;
+  --bs-gutter-x: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
   margin-right: 0 !important;
-  --bs-gutter-x: 2.5rem !important;
 }
 
 .row > * {
@@ -217,11 +223,9 @@ div.row {
 
 .search-show-menu {
   background-color: white;
-  width: 30% !important;
-  /* height: 100vh; */
+  width: 100% !important;
   position: absolute;
   right: 0px;
-  width: 100%;
   z-index: 100 !important;
 }
 
