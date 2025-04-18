@@ -941,4 +941,15 @@ input:valid ~ span {
   .login-form {
     justify-items: center !important;
   }
+  .nav-menu {
+    padding: 0 10px; /* 추가: 좌우 정렬 여유 */
+  }
+
+  .menu-categori-area {
+    padding-left: 0; /* 좌측 여백 제거 */
+  }
+
+  .logo-img {
+    margin: 0 auto; /* 중앙 정렬 유도 */
+  }
 }
