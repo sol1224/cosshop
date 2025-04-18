@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <img alt="iconlogo" src="/icon/footer.png" className="logo-img-footer" />
+      <img alt="iconlogo" src="/icon/footer.png" />
       <div className="footer-text1">
         <div className="mo-row">
           <div className="mo-row-pd">
