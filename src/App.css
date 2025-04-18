@@ -957,7 +957,7 @@ input:valid ~ span {
     padding: 0 !important;
   }
 
-  .container {
-    --bs-gutter-x: 0 !important;
+  .login-form {
+    padding: 0;
   }
 }
