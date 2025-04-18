@@ -935,4 +935,7 @@ input:valid ~ span {
   .login-page-etc {
     width: 300px !important;
   }
+  .login-form {
+    justify-items: center !important;
+  }
 }
