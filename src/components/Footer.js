@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+      <div className="footer-logo-wrapper">
         <img
           alt="iconlogo"
           src="/icon/footer.png"
