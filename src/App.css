@@ -857,7 +857,8 @@ input:valid ~ span {
   }
 
   .logo-img-footer {
-    width: 200px;
+    width: 200px !important;
+    text-align: center;
   }
 
   .about-mo {
