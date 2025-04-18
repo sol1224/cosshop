@@ -924,19 +924,19 @@ input:valid ~ span {
     width: 100% !important;
   }
   .login-label {
-    width: 300px;
+    width: 100%;
   }
   .bottom-pd {
-    width: 300px;
+    width: 100%;
   }
   .login-button {
-    width: 300px !important;
+    width: 100% !important;
   }
   .find-me {
-    width: 300px !important;
+    width: 100% !important;
   }
   .login-page-etc {
-    width: 300px !important;
+    width: 100% !important;
   }
   .login-form {
     justify-items: center !important;
@@ -955,11 +955,5 @@ input:valid ~ span {
 
   .col-pd {
     padding: 0;
-  }
-  .login-form {
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
   }
 }
