@@ -4,7 +4,7 @@ const HomeBottom = () => {
   return (
     <div className="home-bottom">
       <div className="home-bottom-img">
-        <div>
+        <div className="home-bottom-logo">
           <img
             alt="iconlogo"
             className="logo-img-footer"

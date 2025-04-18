@@ -497,13 +497,6 @@ input:valid ~ span {
   padding-top: 22px;
 }
 
-.footer-logo-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .find-me {
   font-size: 0.825rem;
   display: flex;
@@ -630,7 +623,7 @@ input:valid ~ span {
 }
 
 .home-bottom-img {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   height: 242px;
   align-content: center;
@@ -864,7 +857,7 @@ input:valid ~ span {
   }
 
   .logo-img-footer {
-    margin: 0 auto;
+    width: 200px;
   }
 
   .about-mo {
@@ -881,13 +874,14 @@ input:valid ~ span {
     flex-direction: column;
   }
 
+  .footer-img {
+    /* padding: 0; */
+  }
+
   .home-bottom-img {
+    border: none;
+    margin: 0 auto !important;
     width: 100%;
-    margin: 0 auto;
-    height: 242px;
-    align-content: center;
-    justify-items: center;
-    border-bottom: 1px solid rgb(54, 54, 54);
   }
 
   .footer-text1 {
@@ -965,8 +959,9 @@ input:valid ~ span {
   .col-pd {
     padding: 0;
   }
-  .footer-logo-wrapper {
-    justify-content: center !important;
+
+  .home-bottom-logo {
+    width: 100%;
     text-align: center;
   }
 }
