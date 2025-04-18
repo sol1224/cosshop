@@ -954,7 +954,7 @@ input:valid ~ span {
     margin: 0 auto; /* 중앙 정렬 유도 */
   }
 
-  div.col {
-    padding: 0px;
+  .row {
+    --bs-gutter-x: 0 !important;
   }
 }
