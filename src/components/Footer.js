@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-img">
+      <div style={{ width: "100%" }}>
         <img alt="iconlogo" src="/icon/footer.png"></img>
       </div>
       <div className="footer-text1">
