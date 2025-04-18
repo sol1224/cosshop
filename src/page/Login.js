@@ -56,7 +56,7 @@ const Login = ({ setAuthenticate, user, setUser }) => {
           <div className="login-label" type="password">
             비밀번호
           </div>
-          <div>
+          <div className="bottom-pd">
             <input
               className="login-input"
               onChange={event => setPassword(event.target.value)}

@@ -441,18 +441,18 @@ input:valid ~ span {
 .login-input {
   background-color: #d8d8d8;
   border: none;
-  width: 80%;
+  width: 100%;
 }
 
 .login-button {
   margin-top: 22px;
+  width: 600px;
   background-color: #1b1b1b;
   border: none;
   color: white;
   font-family: SuisseIntl-Medium;
   height: 40px;
   font-size: 0.86rem;
-  width: 80%;
 }
 
 .login-page {
@@ -470,9 +470,9 @@ input:valid ~ span {
 }
 
 .login-label {
-  width: 80%;
   padding-bottom: 6px;
   font-size: 0.85rem;
+  width: 600px;
 }
 
 .login-page-title-sub {
@@ -487,6 +487,7 @@ input:valid ~ span {
 
 .bottom-pd {
   padding-bottom: 10px;
+  width: 600px;
 }
 
 .top-pd {
@@ -918,5 +919,20 @@ input:valid ~ span {
   }
   .login-page-etc {
     width: 100% !important;
+  }
+  .login-label {
+    width: 300px;
+  }
+  .bottom-pd {
+    width: 300px;
+  }
+  .login-button {
+    width: 300px !important;
+  }
+  .find-me {
+    width: 300px !important;
+  }
+  .login-page-etc {
+    width: 300px !important;
   }
 }
