@@ -82,10 +82,6 @@ body {
   display: flex;
 }
 
-.nav-body {
-  min-width: 330px;
-}
-
 .nav-title-font {
   color: #fff;
   width: 100%;
@@ -956,5 +952,8 @@ input:valid ~ span {
 
   .row {
     --bs-gutter-x: 0 !important;
+  }
+  .col {
+    padding: 0 !important;
   }
 }
