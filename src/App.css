@@ -67,6 +67,7 @@ body {
 }
 
 .container {
+  --bs-gutter-x: 0rem !important;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -956,5 +957,13 @@ input:valid ~ span {
   .nav-body {
     width: 100%;
     --bs-gutter-x: 0 !important;
+  }
+
+  .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
   }
 }
