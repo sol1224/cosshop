@@ -110,7 +110,6 @@ body {
 .menu-categori-area {
   display: flex;
   flex-direction: row;
-  padding-left: 16px;
 }
 
 .icon-img {
@@ -140,7 +139,7 @@ body {
 }
 
 .row {
-  --bs-gutter-x: 1.5 !important;
+  --bs-gutter-x: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-left: 0 !important;
