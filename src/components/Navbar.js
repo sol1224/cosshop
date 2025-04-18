@@ -67,7 +67,7 @@ const Navbar = ({ user, setSex }) => {
       </div>
 
       {/* ================= */}
-      <Row className="nav-body">
+      <Row>
         <Col>
           <button
             // className="menu-button menu-left-pd"
